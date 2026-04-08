@@ -1,5 +1,5 @@
-ccxt>=4.0.0
-pandas<3.0.0
+ccxt
+pandas>=2.0.0
 pandas-ta
 plotly
 streamlit
