@@ -38,7 +38,9 @@ refresh_sec = st.sidebar.slider("데이터 자동 갱신 (초)", 5, 60, 10)
 # ==========================================
 def get_data(symbol, timeframe):
     try:
-        exchange = ccxt.binance()
+        # exchange = ccxt.binance()  <-- 기존 코드
+        exchange = ccxt.binanceus() # <-- 미국 서버용 바이낸스로 변경
+        # exchange = ccxt.bybit()
         ohlcv = exchange.fetch_ohlcv(symbol, timeframe=timeframe, limit=200)
         df = pd.DataFrame(ohlcv, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
         df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
