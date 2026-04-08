@@ -1,15 +1,6 @@
-
-
 ccxt
 pandas
 pandas_ta
 plotly
 streamlit
 streamlit-autorefresh
-
-
-
-
-
-
-
