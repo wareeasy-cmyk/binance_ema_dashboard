@@ -1,6 +1,3 @@
-#   https://gemini.google.com/app/191010761569e34b
-#   2026/04/08 
-
 
 import ccxt
 import pandas as pd
