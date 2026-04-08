@@ -1,6 +1,6 @@
-ccxt
+ccxt>=4.0.0
 pandas
-pandas_ta
+pandas-ta
 plotly
 streamlit
 streamlit-autorefresh
